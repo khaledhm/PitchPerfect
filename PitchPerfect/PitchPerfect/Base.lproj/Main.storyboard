@@ -31,23 +31,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-wD-hBq">
-                                <rect key="frame" x="155.5" y="488.5" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="OIn-JV-aPe"/>
-                                    <constraint firstAttribute="width" constant="64" id="icQ-bZ-Npt"/>
-                                </constraints>
-                                <state key="normal" image="Stop"/>
-                                <connections>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtg-YB-UMe"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25976088377367401" blue="0.44295288705583757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EVm-wD-hBq" firstAttribute="centerX" secondItem="Jsg-L5-Q99" secondAttribute="centerX" id="2ZG-9V-mOx"/>
                             <constraint firstItem="Jsg-L5-Q99" firstAttribute="top" secondItem="PeS-Eb-sDS" secondAttribute="bottom" constant="16.5" id="OqL-sH-21U"/>
-                            <constraint firstItem="EVm-wD-hBq" firstAttribute="top" secondItem="Jsg-L5-Q99" secondAttribute="bottom" constant="8" id="RwR-3g-qB1"/>
                             <constraint firstItem="PeS-Eb-sDS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SOV-Jv-gkO"/>
                             <constraint firstItem="PeS-Eb-sDS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VOj-cn-Pkx"/>
                             <constraint firstItem="Jsg-L5-Q99" firstAttribute="centerX" secondItem="PeS-Eb-sDS" secondAttribute="centerX" id="fTP-DV-N7b"/>
@@ -58,7 +45,6 @@
                     <connections>
                         <outlet property="recordButten" destination="PeS-Eb-sDS" id="wUu-v6-Wdd"/>
                         <outlet property="recordingLabel" destination="Jsg-L5-Q99" id="FbC-sh-35j"/>
-                        <outlet property="stopRecordingButten" destination="EVm-wD-hBq" id="IDU-bm-SbM"/>
                         <segue destination="yAo-9P-9Kh" kind="show" identifier="stopRecording" id="W1O-Vi-jmy"/>
                     </connections>
                 </viewController>
